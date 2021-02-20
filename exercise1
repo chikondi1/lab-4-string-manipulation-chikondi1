@@ -1,0 +1,14 @@
+#Write a function that capitalizes the first and fourth letters of a name, e.g.
+
+#old_macdonald('macdonald') --> MacDonald
+
+#Add your code to exercise1.py
+#Note: there is a method called "capitalize." The syntax for it is 'macdonald'.capitalize() and it returns 'Macdonald'
+
+#macintosh("macbook") --> MacBook
+
+laptop = "macbook"
+macintosh = "M" + laptop[1:3] + "B" + laptop[4:]
+print(macintosh)
+
+#I wasn't completely sure how to do this using the capitalize function, but it worked when I did it this way too. The only issue is if the word was changed, it would still print "MacBook"
