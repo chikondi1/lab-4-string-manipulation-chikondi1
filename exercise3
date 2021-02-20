@@ -1,0 +1,18 @@
+#Exercise 3
+# Write code to extract the latitude and longitude from the URL: https://www.google.com/maps/@42.2509428,-71.8249939,17z
+# Output should be text that reads:
+
+# Latitude: 42.2509428
+# Longitude: -71.8249939
+
+#import module
+import re 
+
+#add string that will be used to select from
+url = 'https://www.google.com/maps/@42.2509428,-71.8249939,17z'
+
+#use code to select the part of the string to scrape
+latitude, longitude = re.search(r'@(.*?),(.*?),',url).groups()
+
+print("Latitude: " + latitude)
+print("Longitude: " + longitude)
